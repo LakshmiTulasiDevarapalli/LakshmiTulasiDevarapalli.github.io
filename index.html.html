@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lakshmi Tulasi – Full-Stack Software Engineer</title>
+<meta name="description" content="Full-stack software engineer with 8+ years building .NET, Angular and React applications. Experience and projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0A0C;--ink:#F2EDE4;--muted:#9A948A;--line:#25252B;--accent:#F58A1F;--soft:#141418;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--sans:'Hanken Grotesk','Segoe UI',Arial,sans-serif;
+  color-scheme:dark;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root[data-theme="light"]{--bg:#FBF8F3;--ink:#16130F;--muted:#6E665B;--line:#E8E1D6;--accent:#C9600A;--soft:#F1EBE1;color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
+p{margin:0 0 14px}
+
+header.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:28px 0;flex-wrap:wrap}
+.brand{font:600 22px var(--serif);color:var(--ink);text-decoration:none}
+nav a{margin-left:22px;color:var(--muted);text-decoration:none;font-size:14.5px;transition:color .2s}
+nav a:hover{color:var(--ink)}
+
+.hero{padding:88px 0 96px}
+.hero h1{font-size:clamp(54px,10vw,104px);font-weight:300;letter-spacing:-.025em;line-height:1.02}
+.hero .role{font:400 clamp(22px,3.2vw,30px)/1.4 var(--serif);color:var(--accent);margin:18px 0 28px;font-style:italic}
+.hero .lede{max-width:56ch;font-size:17px;margin-bottom:32px}
+.links{display:flex;gap:26px;flex-wrap:wrap}
+.links a{font-weight:500;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px;transition:opacity .2s}
+.links a:hover{opacity:.7}
+
+.row{display:grid;grid-template-columns:170px 1fr;gap:16px 56px;padding:56px 0;border-top:1px solid var(--line)}
+.row>h2{font:500 15px var(--sans);color:var(--accent);letter-spacing:.01em;padding-top:4px}
+.body{min-width:0;max-width:60ch}
+.body.wide{max-width:none}
+
+dl{margin:0}
+dl div{display:grid;grid-template-columns:150px 1fr;gap:4px 24px;padding:12px 0;border-bottom:1px solid var(--line)}
+dl div:first-child{padding-top:0}
+dl div:last-child{border-bottom:0}
+dt{font-weight:500;color:var(--ink)}
+dd{margin:0;color:var(--muted);font-size:15px}
+
+.glams-fig{margin:28px 0 0;padding:22px 24px;background:var(--soft);border:1px solid var(--line);border-radius:6px}
+.glams-fig p{font-size:14px;color:var(--muted);margin-bottom:14px}
+.bar{display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:14px}
+.bar span:first-child{width:74px;color:var(--muted)}
+.line{height:5px;border-radius:3px;background:var(--muted);opacity:.45}
+.line.new{background:var(--accent);opacity:1}
+.fig-note{font:500 26px var(--serif);color:var(--accent);margin:14px 0 0}
+
+.job{padding-bottom:34px}
+.job h3{font-size:24px;font-weight:500;letter-spacing:-.005em}
+.when{color:var(--muted);font-size:14px;margin:2px 0 10px}
+.job ul{margin:0;padding-left:18px}
+.job li{margin-bottom:5px}
+.job li::marker{color:var(--accent)}
+.stack{font-size:14px;color:var(--muted);margin:10px 0 0}
+details summary{cursor:pointer;color:var(--accent);font-size:15px}
+details ul{margin-top:8px}
+
+.proj{padding-bottom:36px}
+.proj h3{font-size:26px;font-weight:500;margin-bottom:8px}
+
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:720px){
+  .hero{padding:56px 0 64px}
+  .row{grid-template-columns:1fr;gap:8px;padding:44px 0}
+  dl div{grid-template-columns:1fr}
+  nav a{margin:0 18px 0 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">Lakshmi Tulasi</a>
+    <nav aria-label="Sections"><a href="#skills">Skills</a><a href="#glams">GLAMS</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Lakshmi Tulasi</h1>
+      <p class="role">Full-stack software engineer, .NET, Angular and React</p>
+      <p class="lede">I have spent 8+ years building and supporting enterprise web applications and APIs, most recently on a labelling and artwork platform used by leading pharmaceutical companies. I work across the stack, from SQL Server and .NET Core microservices to Angular and React front ends, and I am comfortable in client calls, code reviews and production support.</p>
+      <div class="links">
+        <a href="mailto:lakshmi.tulasi3001@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/lakshmi-tulasi-a462a2412">LinkedIn</a>
+        <a href="https://github.com/LakshmiTulasiDevarapalli">GitHub</a>
+      </div>
+    </div>
+
+    <section class="row" id="skills">
+      <h2>Skills</h2>
+      <div class="body wide">
+        <dl>
+          <div><dt>Backend</dt><dd>C#, .NET Core (2.1–3.0), .NET Framework (1.0–4.5), ASP.NET MVC, Web API, REST, GraphQL, WCF, Entity Framework and EF Core, Identity Server, OAuth</dd></div>
+          <div><dt>Frontend</dt><dd>Angular (1.x through 6), React, Next.js, TypeScript, JavaScript (ES6), jQuery, HTML5, CSS3, SCSS, Bootstrap, Tailwind CSS</dd></div>
+          <div><dt>Data</dt><dd>SQL Server, T-SQL, stored procedures, MySQL, Firebase, Supabase, SSRS, SSIS, Elasticsearch</dd></div>
+          <div><dt>Architecture</dt><dd>Microservices, RESTful APIs, event-driven design with Apache Kafka, async programming, TDD</dd></div>
+          <div><dt>Cloud and DevOps</dt><dd>Azure App Services, Azure Functions, Service Bus, Azure DevOps, Google Cloud Run, Docker, Jenkins, GitLab, Grafana</dd></div>
+          <div><dt>AI-assisted development</dt><dd>GitHub Copilot and Claude for code generation, debugging, refactoring and documentation</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="row" id="glams">
+      <h2>Featured product</h2>
+      <div class="body">
+        <h3 style="font-size:34px;margin-bottom:12px">GLAMS</h3>
+        <p>An enterprise artwork and labelling management platform used by top pharmaceutical companies. It brings all labelling and artwork into one secure, trackable place, replacing email trails, manual sign-off sheets and SharePoint-based trackers.</p>
+        <p>I worked on GLAMS for my whole time at Tech Mahindra, growing from building screens and data access to designing microservices, integrations and new modules of the ordering system.</p>
+        <div class="glams-fig" role="img" aria-label="Artwork lifecycle reduced from 24 weeks to 7 weeks, a 70.8 percent reduction">
+          <p>Artwork lifecycle for a top-10 pharmaceutical client</p>
+          <div class="bar"><span>Before</span><div class="line" style="width:100%"></div><span>24 weeks</span></div>
+          <div class="bar"><span>With GLAMS</span><div class="line new" style="width:29%"></div><span>7 weeks</span></div>
+          <p class="fig-note">70.8% faster</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row" id="experience">
+      <h2>Experience</h2>
+      <div class="body wide">
+        <div class="job">
+          <h3>Independent learning and projects</h3>
+          <p class="when">Nov 2024 – Present</p>
+          <ul>
+            <li>Relocated to the United States and used the time to learn React and Next.js.</li>
+            <li>Built full-stack web applications with Next.js, TypeScript, Tailwind CSS and Supabase, deployed on Google Cloud (see Projects).</li>
+            <li>Use GitHub Copilot and Claude in my workflow while reviewing and testing everything they produce.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Senior Software Engineer, Tech Mahindra</h3>
+          <p class="when">Apr 2024 – Oct 2024 · GLAMS, Perigord Life Science Solutions</p>
+          <ul>
+            <li>Built features in a large enterprise application using .NET Core microservices, working with DevOps, SRE and performance teams.</li>
+            <li>Developed a digital sales front end in React and secured the APIs with Identity Server and tokens.</li>
+            <li>Added event-driven streaming with Apache Kafka, better monitoring with Grafana and log4net, and deployed Azure App Services and Functions.</li>
+          </ul>
+          <p class="stack">.NET Core, React, Kafka, SQL Server, Identity Server, Grafana, Azure Functions, GitLab</p>
+        </div>
+        <div class="job">
+          <h3>Senior Software Engineer, Tech Mahindra</h3>
+          <p class="when">Oct 2023 – Apr 2024 · GLAMS</p>
+          <ul>
+            <li>Designed new modules of the end-to-end ordering system on .NET Core microservices.</li>
+            <li>Built React features and reusable Angular components, connected through GraphQL and REST APIs.</li>
+            <li>Redesigned the database schema with EF Core code-first migrations, used Elasticsearch for search and log analysis, and resolved production performance issues.</li>
+          </ul>
+          <p class="stack">.NET Core, GraphQL, SQL Server, React, Angular, EF Core, Elasticsearch, EPPlus</p>
+        </div>
+        <div class="job">
+          <h3>Software Engineer, Tech Mahindra</h3>
+          <p class="when">Mar 2023 – Sep 2023 · GLAMS</p>
+          <ul>
+            <li>Led the offshore team and gave regular status updates to the client.</li>
+            <li>Built reusable email and SMS components used across several applications, and Web APIs integrating third-party systems with OAuth.</li>
+            <li>Owned defect triage, bug fixing and unit testing, and joined client discussions on requirements.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Software Engineer, Tech Mahindra</h3>
+          <p class="when">Jan 2022 – Feb 2023 · GLAMS</p>
+          <details><summary>Show details</summary>
+            <ul>
+              <li>Built views and business logic with ASP.NET MVC and Angular, plus RESTful Web APIs and third-party integrations.</li>
+              <li>Designed SSRS reports, tracked audit trails with log4net, and migrated source control from TFS to Git.</li>
+            </ul>
+          </details>
+        </div>
+        <div class="job">
+          <h3>Software Engineer, Tech Mahindra</h3>
+          <p class="when">Aug 2020 – Dec 2021 · GLAMS</p>
+          <details><summary>Show details</summary>
+            <ul>
+              <li>Built UI, business logic and data layers in C# using MVC and MVP patterns, and created WCF services for internal integrations.</li>
+              <li>Wrote batch jobs for user activity monitoring and notifications, using LINQ and ADO.NET.</li>
+            </ul>
+          </details>
+        </div>
+        <div class="job" style="padding-bottom:0">
+          <h3>Software Engineer, Tech Mahindra</h3>
+          <p class="when">Jul 2019 – Jul 2020 · GLAMS</p>
+          <details><summary>Show details</summary>
+            <ul>
+              <li>Built an application that accepts secured FTP Excel files and loads them into SQL Server for shipment tracking.</li>
+              <li>Designed the database with indexes, views, functions and triggers, and built AngularJS interfaces deployed with Jenkins and SVN.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="row" id="projects">
+      <h2>Projects</h2>
+      <div class="body">
+        <div class="proj">
+          <h3>Healthcare compliance search platform</h3>
+          <p>A secure web app where users upload PDF records, search them by keyword and export findings as Word reports, across nine compliance modules. It uses Supabase authentication with per-module access checks on every API route, a 30-minute idle timeout verified on the server, and audit logging that never stores sensitive content. Deployed with Docker, Cloud Build and Cloud Run.</p>
+          <p class="stack">Next.js, React, TypeScript, Supabase, pdf.js, Google Cloud Run</p>
+        </div>
+        <div class="proj" style="padding-bottom:0">
+          <h3>Portfolio site with gated downloads</h3>
+          <p>A portfolio web app where visitors request access to resources and an admin approves each request before a download link is emailed. It includes an admin dashboard for uploads and the request queue, expiring email links, and short-lived signed URLs on private storage.</p>
+          <p class="stack">Next.js, TypeScript, Tailwind CSS, Supabase, Nodemailer, Google Cloud Run</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="row" id="contact">
+      <h2>Contact</h2>
+      <div class="body">
+        <p>I live in Riverdale Park, Maryland, am authorized to work in the United States, and am open to full-stack and .NET roles.</p>
+        <div class="links">
+          <a href="mailto:lakshmi.tulasi3001@gmail.com">lakshmi.tulasi3001@gmail.com</a>
+          <a href="https://www.linkedin.com/in/lakshmi-tulasi-a462a2412">LinkedIn</a>
+          <a href="https://github.com/LakshmiTulasiDevarapalli">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Lakshmi Tulasi · Riverdale Park, MD</footer>
+</div>
+</body>
+</html>
